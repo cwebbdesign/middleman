@@ -124,7 +124,7 @@ module Middleman
         def initialize
           super
       
-          self.class.inst = self
+          self.class.singleton = self
           run_hook :before_configuration
     
           # Search the root of the project for required files
